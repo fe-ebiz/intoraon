@@ -15,6 +15,12 @@ module.exports = function () {
             dest_m: development + '/m/',
         },
 
+        //json 추가
+        json = {
+            src: source + '/**/*.json',
+            // copySrc: source + '/copy_temp/**/*.json',
+        },
+
         // Sass 경로
         sass = {
             src: source + '/assets/sass/**/!(_)*.{scss,sass}',
@@ -73,6 +79,9 @@ module.exports = function () {
         etc: etc,
         static: static,
 
-        htmlbeautify: htmlbeautify
+        htmlbeautify: htmlbeautify,
+
+        json: json
+
     };
 };

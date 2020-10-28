@@ -175,6 +175,14 @@ function watching() {
 	watch(config.img.src, img);
 	watch(config.static.src, static);
 	watch(config.etc.src, etc);
+
+
+	watch(config.json.src, template);
+    watch(config.json.src, templateAll);
+
+    watch(config.json.src, templateM);
+    watch(config.json.src, templateMAll);
+
 };
 
 // util
