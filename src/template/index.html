@@ -7,11 +7,10 @@
 <!-- <script type="text/javascript" src="/static/js/init.js"></script> -->
 
 </head>
-
+ 
 <body class="page-home">
-
+    @@include('src/template/include/banner/_top_banner.html')  
     @@include('src/template/include/_header.html')
-
     <div class="main">
         <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
         <div class="weather vid">
@@ -369,8 +368,9 @@
     </div>
 
     <!-- 팝업 -->
-    @@include('src/template/include/popup/_pop_event.html')
-    <!-- @@include('src/template/include/popup/_event.html') -->
+    
+    @@include('src/template/include/popup/_pop_lodgment.html')
+    
 
     @@include('src/template/include/_footer.html')
 
@@ -390,7 +390,7 @@
         });
     </script>
     <!-- 팝업 -->
-    @@include('src/template/include/popup/_pop_event.html')
+    <!-- @include('src/template/include/popup/_pop_event.html') -->
 </body>
 
 </html>
