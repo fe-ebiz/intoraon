@@ -3496,7 +3496,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        background: url(http://img.hotelairsky.co.kr/svc/img/main/bg_main_re.png) repeat;
+        background: url(http://img.intoraon.co.kr/main/bg_main_re.png) repeat;
     }
 }
 
@@ -7839,3 +7839,216 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         }
     }
 }
+
+
+.popup-lodgment{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200000;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;    
+    overflow-y: scroll;
+    display: none;
+    *{
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+    }
+
+    .pop-wrap{
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        justify-content: center;
+        .pop-contents{
+            position: relative;
+            .img-box{
+                display: block;
+            }
+            .btn-close-pop{
+                background: none;
+                position: absolute;
+                top: 9px;
+                right: 12px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                outline: none;
+            }
+            .btn-go-event{
+                position: absolute;
+                top: 762px;
+                left: 50px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:991px){
+    .popup-lodgment{
+        .pop-wrap{
+            .pop-contents{
+                width: 80%;
+                .btn-close-pop{
+                    width: 6.42%;
+                    top: calc((9*1.13/991) * 100vw);
+                    right: 1.71%;
+                }
+                .btn-go-event{
+                    width: 24.57%;
+                    top: calc((762*1.13/991) * 100vw);
+                    left: 7.14%;
+                }
+            }
+        }
+    }
+}
+
+/*룸 이벤트(룸/룸스키 이벤트)*/
+.pop-event-room{
+    z-index: 100001;
+    top: 130px;
+    left: 40px;
+}
+
+.pop-event-room2{
+    z-index: 100002;
+    top: 130px;
+    left: 440px;
+}
+
+.pop-event-room-ski{
+    z-index: 100000;
+    top: 130px;
+    left: 840px;
+}
+
+.pop-event-room, .pop-event-room-ski, .pop-event-room2{
+    position: fixed;
+    
+    *{
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .pop-event-area{
+        .pop-box{
+            position: relative;
+            .pop-main{
+                width: 100%;
+                img{
+                    width: fit-content;
+                }
+            }
+            .btn-go-event-detail{
+                display: none;
+                position: absolute;
+                bottom: 1.5%;
+                left: 0;
+                right: 0;
+                width: 33%;
+                padding: 2.4% 0;
+                padding-left: 5%;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .pop-btn-box-ul{
+            background-color: #ccc;
+            display: flex;
+            height: 34px;
+            li{
+                width: 50%;
+                button{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    height: 100%;
+                    letter-spacing: -0.4px;
+                    line-height: 1.1;
+                    font-size: 15px;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .btn-not-today{
+                    color: #fff;
+                    // margin-right: 10px;
+                    background-color: #666;
+                }
+
+                .btn-close-pop{
+                    background-color: #444;
+                    
+                    color: #fff;
+                    
+                }
+            }
+            li.not-today-box{
+                // width: 82%;
+                // text-align: right;
+            }
+            li.close-pop-box{
+                // width: 18%; 
+            }
+        }
+        
+    }
+}
+
+
+
+@media(max-width:991px){
+    .pop-event-room,.pop-event-room-ski, .pop-event-room2{
+        top: 52%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        // width: calc(400/560 *100vw);
+        width: 86%;
+        .pop-event-area{
+            .pop-box{
+                
+                .pop-main{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .btn-go-event-detail{
+                    
+                }
+            }
+            .pop-btn-box-ul{
+                height: calc(50/560 * 100vw);
+                li{
+                    button{
+                        font-size: calc(20/560 *100vw);
+                    }
+                    .btn-not-today{
+                        // margin-right: calc(10/560 *100vw);
+                    }
+    
+                    .btn-close-pop{
+                        
+                    }
+                }
+                li.not-today-box{
+                }
+                li.close-pop-box{
+                    
+                }
+            }
+            
+        }
+    }
+}
+

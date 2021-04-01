@@ -268,7 +268,8 @@ figure>img {
             }
 
             .logo-box {
-                width: 370px;
+                // width: 370px;
+                width: 140px;
                 padding-left: 10px;
 
                 >h1 {
@@ -282,7 +283,9 @@ figure>img {
             }
 
             .nav {
-                padding-right: 142px;
+                // padding-right: 142px;
+                padding-right: 152px;
+                // padding-right: 220px;
 
                 .menu {
                     font-size: 0;
@@ -393,9 +396,10 @@ figure>img {
     .header {
         .gnb {
             .logo-box {
-                width: auto;
+                // width: auto;
+                width: 170px;
                 .logo {
-                    width: 180px;
+                    width: 170px;
                 }
             }
 
@@ -426,8 +430,8 @@ figure>img {
             }
 
             .logo-box {
-                width: auto;
-
+                // width: auto;
+                width: 120px;
                 .logo {
                     width: 120px;
                 }

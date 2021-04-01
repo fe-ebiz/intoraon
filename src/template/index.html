@@ -9,7 +9,7 @@
 </head>
  
 <body class="page-home">
-    @@include('src/template/include/banner/_top_banner.html')  
+    <!-- @include('src/template/include/banner/_top_banner.html')   -->
     @@include('src/template/include/_header.html')
     <div class="main">
         <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
@@ -20,35 +20,41 @@
                     <span class="s-2">강원의 오늘 <span class="t-1">▷</span> 맑음</span>
                     <span class="s-3"><span class="big">7</span><span class="c">℃</span></span>
                     <span class="s-4">
-                        <img src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/weather/finedust.png" alt="미세먼지">
+                        <img src="http://img.intoraon.co.kr/weather/finedust.png" alt="미세먼지">
                         <span class="txt-dust">미세먼지 - <span class="grade">보통</span></span>
                     </span>
                 </div>
-                <img src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/weather/clear.png" alt="날씨">
+                <img src="http://img.intoraon.co.kr/weather/clear.png" alt="날씨">
             </div>
         </div>
         <!-- //.weather -->
         <section class="slider_section main-visual">
             <div id="slider_main" class="slider_container smain">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_01.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_06.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_02.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_03.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_04.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/main/bg_05.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_01.jpg" alt="인투라온호텔사진" /></div>
+                    <!--스키사진(PC) 추가-->
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_ski.jpg" alt="인투라온호텔사진" /></div>
+                    <!--스키사진(PC) 추가-->
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_06.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_02.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_03.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_04.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/main/bg_05.jpg" alt="인투라온호텔사진" /></div>
                 </div>
                 <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
             <div id="slider_mmain" class="slider_container mob">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_01.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_06.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_02.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_03.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_04.jpg" alt="인투라온호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://design.ebiznetworks.co.kr/lhc/intoraon.co.kr/img/m/main/bg_05.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_01.jpg" alt="인투라온호텔사진" /></div>
+                    <!--스키사진(모바일) 추가-->
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_ski.jpg" alt="인투라온호텔사진" /></div>
+                    <!--//스키사진(모바일) 추가-->
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_06.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_02.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_03.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_04.jpg" alt="인투라온호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="http://img.intoraon.co.kr/m/main/bg_05.jpg" alt="인투라온호텔사진" /></div>
                 </div>
                 <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
@@ -371,6 +377,199 @@
     
     @@include('src/template/include/popup/_pop_lodgment.html')
     
+
+    <!--객실 이벤트-->
+    <div class="pop-event-room">
+        <div class="pop-event-area">
+            <a href="../event/event_room.html" class="pop-box">
+                <div class="pop-main">
+                    <img src="http://img.intoraon.co.kr/event_pop/event_room_pop_main.jpg" alt="메인팝업">
+                </div>
+            </a>
+            <ul class="pop-btn-box-ul">
+                <li class="not-today-box">
+                    <button type="button" class="btn-not-today">오늘 다시 열지 않음</button>
+                </li>
+                <li class="close-pop-box">
+                    <button type="button" class="btn-close-pop">닫기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //쿠키이름
+            let cokieName = "pop_event_room";
+            
+            //오늘 다시 열지 않음 체크
+            if($.cookie(cokieName) != undefined){
+                $('.pop-event-room').hide();
+            }
+
+            //오늘 다시 열지 않음 버튼
+            $(".pop-event-room .btn-not-today").on('click', function(){
+                console.log("성공");
+                addCookieData(cokieName);
+                $('.pop-event-room').hide();
+            });
+
+            //닫기
+            $(".pop-event-room .btn-close-pop").on('click', function(){
+                $(".pop-event-room").hide();
+            });
+
+            
+
+        });
+
+        //쿠키데이터 등록
+        addCookieData = function(popName){
+            
+            if($.cookie(popName) == undefined){
+                console.log("작동")
+                //초단위 테스트용
+                // let date = new Date;
+                // date.setTime(date.getTime() + 5*1000);
+
+                let date = 1;//하루
+                //쿠키가 없는 경우 쿠키를 추가
+                $.cookie(popName, 'Y', { expires: date});
+                //$.removeCookie('pop_liivemate');
+            } 
+        }
+
+    </script>
+    <!--.//객실 이벤트-->
+
+    <!--객실스키 이벤트-->
+    <!-- <div class="pop-event-room-ski">
+        <div class="pop-event-area">
+            <a href="./event/event_room_ski.html" class="pop-box">
+                <div class="pop-main">
+                    <img src="http://img.intoraon.co.kr/event_pop/event_room_ski_pop_main.jpg" alt="메인팝업">
+                </div>
+            </a>
+            <ul class="pop-btn-box-ul">
+                <li class="not-today-box">
+                    <button type="button" class="btn-not-today">오늘 다시 열지 않음</button>
+                </li>
+                <li class="close-pop-box">
+                    <button type="button" class="btn-close-pop">닫기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //쿠키이름
+            let cokieName = "pop_event_room_ski";
+            
+            //오늘 다시 열지 않음 체크
+            if($.cookie(cokieName) != undefined){
+                $('.pop-event-room').hide();
+            }
+
+            //오늘 다시 열지 않음 버튼
+            $(".pop-event-room-ski .btn-not-today").on('click', function(){
+                console.log("성공");
+                addCookieData(cokieName);
+                $('.pop-event-room').hide();
+            });
+
+            //닫기
+            $(".pop-event-room-ski .btn-close-pop").on('click', function(){
+                $(".pop-event-room-ski").hide();
+            });
+
+        });
+
+        //쿠키데이터 등록
+        addCookieData = function(popName){
+            
+            if($.cookie(popName) == undefined){
+                console.log("작동")
+                //초단위 테스트용
+                // let date = new Date;
+                // date.setTime(date.getTime() + 5*1000);
+
+                let date = 1;//하루
+                //쿠키가 없는 경우 쿠키를 추가
+                $.cookie(popName, 'Y', { expires: date});
+                //$.removeCookie(cokieName);
+            } 
+        }
+
+    </script> -->
+    <!--.//객실스키 이벤트-->
+
+
+    <!--객실 이벤트(신규)(자바스크립트 포함)-->
+    <div class="pop-event-room2">
+        <div class="pop-event-area">
+            <a href="./event/event_room2.html" class="pop-box">
+                <div class="pop-main">
+                    <img src="http://img.intoraon.co.kr/event_pop/event_room_pop_main2.jpg" alt="메인팝업">
+                </div>
+            </a>
+            <ul class="pop-btn-box-ul">
+                <li class="not-today-box">
+                    <button type="button" class="btn-not-today">오늘 다시 열지 않음</button>
+                </li>
+                <li class="close-pop-box">
+                    <button type="button" class="btn-close-pop">닫기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //쿠키이름
+            let cokieName = "pop_event_room2";
+            
+            //오늘 다시 열지 않음 체크
+            if($.cookie(cokieName) != undefined){
+                $('.pop-event-room2').hide();
+            }
+
+            //오늘 다시 열지 않음 버튼
+            $(".pop-event-room2 .btn-not-today").on('click', function(){
+                console.log("성공");
+                addCookieData(cokieName);
+                $('.pop-event-room2').hide();
+            });
+
+            //닫기
+            $(".pop-event-room2 .btn-close-pop").on('click', function(){
+                $(".pop-event-room2").hide();
+            });
+
+        });
+
+        //쿠키데이터 등록
+        addCookieData = function(popName){
+            
+            if($.cookie(popName) == undefined){
+                console.log("작동")
+                //초단위 테스트용
+                // let date = new Date;
+                // date.setTime(date.getTime() + 5*1000);
+
+                let date = 1;//하루
+                //쿠키가 없는 경우 쿠키를 추가
+                $.cookie(popName, 'Y', { expires: date});
+                //$.removeCookie(cokieName);
+            } 
+        }
+
+    </script>
+    <!--.//객실 이벤트(신규)(자바스크립트 포함)-->
+
 
     @@include('src/template/include/_footer.html')
 
